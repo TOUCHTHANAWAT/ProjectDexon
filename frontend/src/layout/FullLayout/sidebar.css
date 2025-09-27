@@ -1,0 +1,66 @@
+.custom-sider {
+  background: #fff !important;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* เมนูอยู่ตรงกลาง ปุ่มอยู่ด้านล่าง */
+  min-height: 100vh;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  padding: 10px;
+}
+
+.logo-container img {
+  max-height: 60px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.ant-menu {
+  background: transparent !important;
+  border-inline-end: none !important;
+  flex-grow: 1; /* เมนูขยายเต็มพื้นที่ */
+}
+.ant-menu-item, .ant-menu-submenu-title {
+  font-weight: 500;
+  color: #555;
+}
+
+.ant-menu-item-selected {
+  background-color: #1e164f !important;
+  color: #ffffff !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-submenu-title:hover {
+  color: #008080;
+}
+
+.logout-button {
+  display: flex;
+  align-items:center;
+  justify-content: flex-start;
+  background-color: #eb124f;
+  color: white;
+  border: none;
+  height: 35px;        /* ลดความสูง */
+  width: 93%;          /* กว้างเต็มเมนู */
+  padding: 0 8px;      /* ลด padding ข้างใน */
+  font-size: 14px;     /* ลดขนาดตัวอักษร */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;      /* ทำให้ปุ่มอยู่ตรงกลาง */
+  border-radius: 7px;  /* เพิ่มความโค้งนิด ๆ ให้สวยขึ้น */
+  font-weight:500;
+}
+
+.logout-button:hover {
+  background-color: #ee3c6e !important;
+  color: white !important;
+}

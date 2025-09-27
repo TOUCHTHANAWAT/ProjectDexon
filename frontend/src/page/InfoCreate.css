@@ -1,0 +1,42 @@
+.pipe-form-container {
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-submit {
+  text-align: right;
+}
+
+.buttom-add {
+  border-color: #1e164f !important;
+  color: #ffffff !important;
+  background-color: #1e164f;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.buttom-add:hover {
+  background-color: #3724b4 !important;
+  border-color: #3724b4 !important;
+  box-shadow: 0 5px 12px #1e164f31 !important;
+}

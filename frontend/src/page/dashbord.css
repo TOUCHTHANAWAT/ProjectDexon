@@ -1,0 +1,139 @@
+.custom-modal .ant-modal {
+  top: 20px !important;
+  /* ชิดขอบบน */
+  transform: none !important;
+  /* ปิดการเลื่อนกลางแนวตั้ง */
+  width: 80% !important;
+  /* ความกว้าง */
+  max-width: 1200px !important;
+}
+
+.custom-modal .ant-modal-body {
+  padding: 24px;
+  max-height: 70vh;
+  /* จำกัดความสูง */
+  overflow-y: auto;
+  /* ทำให้ scroll เมื่อเนื้อหายาว */
+}
+
+.btn-add-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.buttom-add {
+  border-color: #1e164f !important;
+  color: #ffffff !important;
+  background-color: #1e164f;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.buttom-add:hover {
+  background-color: #3724b4 !important;
+  border-color: #3724b4 !important;
+  box-shadow: 0 5px 12px #1e164f31 !important;
+  /* เงา */
+}
+
+.buttom-detail {
+  color: #111113 !important;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.buttom-detail:hover {
+  background-color: #dedede !important;
+  border-color: #dedede !important;
+  box-shadow: 0 5px 12px #1e164f31 !important;
+  color: #5b5a5a !important;
+  /* เงา */
+}
+
+.buttom-delete {
+  background-color: #ec124f !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.buttom-delete:hover {
+  background-color: #f63e72 !important;
+  border-color: #f63e72 !important;
+  box-shadow: 0 5px 12px #1e164f31 !important;
+  color: #ffffff !important;
+  /* เงา */
+}
+
+.buttom-back{
+  font-weight:bold;
+  transition: all 0.3s ease;
+}
+
+.buttom-back:hover{
+  font-weight:bold;
+  font-size:medium;
+  transition: all 0.3s ease;
+}
+
+.add-Back {
+  display: flex;
+  justify-content: space-between;
+  /* หัวข้อไปซ้าย ปุ่มไปขวา */
+  align-items: center;
+  /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+  margin-bottom: 16px;
+  /* เว้นระยะห่างกับตาราง */
+}
+
+/* ให้ Table ครอบเต็ม container หรือกำหนด max-width */
+.custom-table-wrapper {
+  width: 100%;
+  /* กว้างเต็ม container */
+  max-width: 1200px;
+  /* จำกัดความกว้างสูงสุด */
+  margin: 0 auto;
+  /* จัดกึ่งกลาง */
+}
+
+/* เพิ่มความสูงให้ Table body scroll ได้ */
+.custom-table-wrapper .ant-table-body {
+  max-height: 500px;
+  /* ความสูงของ body */
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+}
+
+.Text-header {
+  font-size: 35px;
+  font-weight:bolder;
+  margin: 0;
+  color: #1e164f;  /* ตัวอย่าง text-shadow ให้เห็นเงา */
+  text-shadow: 0px 10px 10px rgba(4, 4, 64, 0.363);
+}
+
+.body {
+  padding: 25px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
