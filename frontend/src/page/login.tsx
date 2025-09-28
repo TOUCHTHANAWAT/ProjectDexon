@@ -161,7 +161,6 @@ function Login() {
 
                   </Button>
 
-                  {/* Or <a onClick={() => navigate("/signup")}>signup now !</a> */}
 
                 </Form.Item>
 

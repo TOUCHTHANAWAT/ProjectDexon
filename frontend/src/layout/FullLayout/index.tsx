@@ -12,17 +12,12 @@ import TestPoint from "../../page/TestPoint";
 import Thickness from "../../page/Thickness";
 
 const { Content, Sider } = Layout;
-// const { SubMenu } = Menu;
 
 const FullLayout: React.FC = () => {
   const page = localStorage.getItem("page");
-  // const location = useLocation();
 
   const [messageApi, contextHolder] = message.useMessage();
   const [collapsed, setCollapsed] = useState(false);
-  // const {
-  //   token: { colorBgContainer },
-  // } = theme.useToken();
 
   const setCurrentPage = (val: string) => {
     localStorage.setItem("page", val);
@@ -73,10 +68,6 @@ const FullLayout: React.FC = () => {
           </Menu.Item>
         </Menu>
 
-        {/* <Button onClick={Logout} className="logout-button">
-          <LoginOutlined />
-          Logout
-        </Button> */}
       </Sider>
 
       <Layout>
@@ -85,11 +76,6 @@ const FullLayout: React.FC = () => {
           </Breadcrumb>
 
           <div
-          // style={{
-          //   padding: 24,
-          //   minHeight: "100%",
-          //   background: colorBgContainer,
-          // }}
           >
             <Routes>
               <Route path="/" element={<Dashboard />} />

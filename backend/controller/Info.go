@@ -37,30 +37,12 @@ func ListInfo(c *gin.Context) {
 	result := db.Model(&entity.Info{}).
 		Select("infos.id", "infos.line_number", "infos.location", "`infos`.`from`", "`infos`.`to`", "infos.drawing_number", "infos.service", "infos.material", "infos.inservice_date",
 			"infos.pipe_size", "infos.original_thickness", "infos.stress", "infos.joint_efficiency", "infos.ca", "infos.design_life", "infos.design_pressure", "infos.operating_pressure", "infos.design_temperature", "infos.operating_temperature").
-		// Joins("inner join patients on take_a_histories.patient_id = patients.id ").
-		// Joins("inner join genders on patients.gender_id = genders.id").
-		// Joins("inner join medical_records on take_a_histories.medical_records_id = medical_records.id").
-		// Joins("inner join severities on medical_records.severity_id = severities.id").
-		// Joins("inner join employees on medical_records.employee_id = employees.id").
 		Where("infos.deleted_at IS NULL").
-		// Order("medical_records.date DESC").
 		Find(&info)
 	if result.Error != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": result.Error.Error()})
 		return
 	}
-
-	// for i := range tekeahistory {
-	// 	tekeahistory[i].Age = calculateAge(tekeahistory[i].DateOfBirth)
-	// 	tekeahistory[i].FormattedDate = tekeahistory[i].Date.Format("02-01-2006")
-	// 	// จัดการฟิลด์ LastMenstruationDate
-	// 	if !tekeahistory[i].LastMenstruationDate.IsZero() {
-	// 		tekeahistory[i].FormattedLastMenstruationDate = tekeahistory[i].LastMenstruationDate.Format("02-01-2006")
-	// 	} else {
-	// 		tekeahistory[i].FormattedLastMenstruationDate = "ไม่มีข้อมูล"
-	// 	}
-
-	// }
 
 	c.JSON(http.StatusOK, &info)
 }

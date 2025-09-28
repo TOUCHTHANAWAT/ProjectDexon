@@ -1,19 +1,14 @@
 .custom-modal .ant-modal {
   top: 20px !important;
-  /* ชิดขอบบน */
   transform: none !important;
-  /* ปิดการเลื่อนกลางแนวตั้ง */
   width: 80% !important;
-  /* ความกว้าง */
   max-width: 1200px !important;
 }
 
 .custom-modal .ant-modal-body {
   padding: 24px;
   max-height: 70vh;
-  /* จำกัดความสูง */
   overflow-y: auto;
-  /* ทำให้ scroll เมื่อเนื้อหายาว */
 }
 
 .btn-add-wrapper {
@@ -35,7 +30,6 @@
   background-color: #3724b4 !important;
   border-color: #3724b4 !important;
   box-shadow: 0 5px 12px #1e164f31 !important;
-  /* เงา */
 }
 
 .buttom-detail {
@@ -50,7 +44,6 @@
   border-color: #dedede !important;
   box-shadow: 0 5px 12px #1e164f31 !important;
   color: #5b5a5a !important;
-  /* เงา */
 }
 
 .buttom-delete {
@@ -66,7 +59,6 @@
   border-color: #f63e72 !important;
   box-shadow: 0 5px 12px #1e164f31 !important;
   color: #ffffff !important;
-  /* เงา */
 }
 
 .buttom-back{
@@ -83,27 +75,20 @@
 .add-Back {
   display: flex;
   justify-content: space-between;
-  /* หัวข้อไปซ้าย ปุ่มไปขวา */
   align-items: center;
-  /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
   margin-bottom: 16px;
-  /* เว้นระยะห่างกับตาราง */
 }
 
 /* ให้ Table ครอบเต็ม container หรือกำหนด max-width */
 .custom-table-wrapper {
   width: 100%;
-  /* กว้างเต็ม container */
   max-width: 1200px;
-  /* จำกัดความกว้างสูงสุด */
   margin: 0 auto;
-  /* จัดกึ่งกลาง */
 }
 
 /* เพิ่มความสูงให้ Table body scroll ได้ */
 .custom-table-wrapper .ant-table-body {
   max-height: 500px;
-  /* ความสูงของ body */
   overflow-y: auto;
 }
 

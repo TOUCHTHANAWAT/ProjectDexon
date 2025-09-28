@@ -1,4 +1,3 @@
-// src/pages/InfoTable.tsx
 import React, { useEffect, useState } from "react";
 import { Button, Space, Table, message, Modal, Popconfirm } from "antd";
 import { EditOutlined, DeleteOutlined, FileSearchOutlined, LeftOutlined } from "@ant-design/icons";
@@ -57,7 +56,7 @@ const TestPointTable: React.FC = () => {
     setIsModalOpen(false);
   };
   const handleBack = () => {
-    navigate(-1); // -1 หมายถึงกลับไปหน้าก่อนหน้า
+    navigate(-1);
   };
 
   const showAddModal = () => setIsAddModalOpen(true);
@@ -145,7 +144,6 @@ const TestPointTable: React.FC = () => {
             Add TP
           </Button>
         </div>
-        {/* <h1>Line Number: {dataSource.length > 0 ? dataSource[0].line_number : ""}</h1> */}
         <div className="body">
           <Table
             dataSource={dataSource}

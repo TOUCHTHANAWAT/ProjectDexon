@@ -18,30 +18,6 @@ const AdminRoutes = (isLoggedIn: boolean): RouteObject => {
       { path: "/CML/:id", element: <CML /> },
       { path: "/TestPoint/:id", element: <TestPoint /> },
       { path: "/Thickness/:id", element: <Thickness /> },
-      // {
-      //   path: "/customer",
-      //   element: <Dashboard />,
-      // },
-      // {
-      //   path: "/customer",
-      //   element: <Dashboard />,
-      // },
-      // {
-      //   path: "/customer/create",
-      //   element: <Dashboard />,
-      // },
-      // {
-      //   path: "/customer/edit/:id",
-      //   element: <Dashboard />,
-      // },
-      // {
-      //   path: "/customer/import",
-      //   element: <Dashboard />,
-      // },
-      // {
-      //   path: "/customer/export",
-      //   element: <Dashboard />,
-      // },
     ],
   };
 };

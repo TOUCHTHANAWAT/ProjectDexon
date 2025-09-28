@@ -3,7 +3,7 @@
   border-right: 1px solid #e0e0e0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* เมนูอยู่ตรงกลาง ปุ่มอยู่ด้านล่าง */
+  justify-content: space-between; 
   min-height: 100vh;
 }
 
@@ -24,7 +24,7 @@
 .ant-menu {
   background: transparent !important;
   border-inline-end: none !important;
-  flex-grow: 1; /* เมนูขยายเต็มพื้นที่ */
+  flex-grow: 1; 
 }
 .ant-menu-item, .ant-menu-submenu-title {
   font-weight: 500;
@@ -48,15 +48,15 @@
   background-color: #eb124f;
   color: white;
   border: none;
-  height: 35px;        /* ลดความสูง */
-  width: 93%;          /* กว้างเต็มเมนู */
-  padding: 0 8px;      /* ลด padding ข้างใน */
-  font-size: 14px;     /* ลดขนาดตัวอักษร */
+  height: 35px; 
+  width: 93%;    
+  padding: 0 8px;    
+  font-size: 14px;    
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0 auto;      /* ทำให้ปุ่มอยู่ตรงกลาง */
-  border-radius: 7px;  /* เพิ่มความโค้งนิด ๆ ให้สวยขึ้น */
+  margin: 0 auto;    
+  border-radius: 7px;  
   font-weight:500;
 }
 

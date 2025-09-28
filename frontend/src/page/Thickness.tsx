@@ -99,7 +99,7 @@ const ThicknessTable: React.FC = () => {
                     </Button>
                     <Button
                         danger
-                        onClick={(e) => e.stopPropagation()} // ป้องกันการ trigger row click
+                        onClick={(e) => e.stopPropagation()}
                         className="buttom-delete"
                     >
                         <Popconfirm
@@ -144,7 +144,6 @@ const ThicknessTable: React.FC = () => {
                         Add Thickness
                     </Button>
                 </div>
-                {/* <h1>Line Number: {dataSource.length > 0 ? dataSource[0].line_number : ""}</h1> */}
                 <div className="body">
                     <Table
                         dataSource={dataSource}

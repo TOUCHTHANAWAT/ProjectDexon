@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Form, Input, Button, InputNumber, message, Spin } from "antd";
 import "./InfoCreate.css";
 import type { TestPointInterface } from "../interface/TestPoint";
-import { GetTestPointByID, UpdateTestPointById } from "../services/https/TestPoint"; // สร้าง API update
-// import dayjs from "dayjs";
+import { GetTestPointByID, UpdateTestPointById } from "../services/https/TestPoint";
 
 interface TestPointFormProps {
     TPID: string;

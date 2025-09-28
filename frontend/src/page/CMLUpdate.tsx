@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Form, Input, Button, InputNumber, message, Spin } from "antd";
 import "./CMLCreate.css";
 import type { CMLInterface } from "../interface/CML";
-import { GetCMLByID, UpdateCMLById } from "../services/https/CML"; // สร้าง API update
-// import dayjs from "dayjs";
+import { GetCMLByID, UpdateCMLById } from "../services/https/CML"; 
 
 interface PipeFormProps {
     cmlID: string;
